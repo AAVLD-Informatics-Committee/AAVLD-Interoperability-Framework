@@ -27,6 +27,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: drafting
+    attributes:
+      label: Source, drafting, and conformance classification
+      description: Identify source IDs and versions, authority domains, statement classes, conformance subjects, and verification methods, or state why they do not apply.
+    validations:
+      required: true
+  - type: textarea
     id: impacts
     attributes:
       label: Mapping, terminology, compatibility, and data-safety impacts

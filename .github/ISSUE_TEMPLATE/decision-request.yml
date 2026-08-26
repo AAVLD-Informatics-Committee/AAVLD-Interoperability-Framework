@@ -27,6 +27,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: drafting
+    attributes:
+      label: Source authority and conformance impact
+      description: Identify source IDs and versions, authority domains, statement classes, FHIR implications, and verification effects.
+    validations:
+      required: true
+  - type: textarea
     id: consequences
     attributes:
       label: Consequences and affected artifacts

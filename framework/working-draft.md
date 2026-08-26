@@ -28,6 +28,20 @@ does not define production transport selection, authentication architecture,
 billing, complete practice-management workflows, formal FHIR Implementation
 Guide publication, or full deployment requirements.
 
+## Drafting and conformance status
+
+The proposed [drafting conventions](drafting-conventions.md) and
+[source classification policy](../references/source-classification.md) govern
+this pre-symposium working material pending committee disposition of
+[#10](https://github.com/AAVLD-Informatics-Committee/AAVLD-Interoperability-Framework/issues/10).
+
+Framework requirements will identify a conformance subject, behavior,
+conditions, traceability, and verification approach. FHIR cardinalities,
+bindings, invariants, `mustSupport`, and other implementation-profile
+constraints will be versioned and mapped to framework statements or an
+explicit profile decision. No FHIR version or implementation profile is
+mandatory at this stage.
+
 ## Initial use-case sequence
 
 1. Publish and discover a test or service offering.
@@ -38,4 +52,4 @@ Guide publication, or full deployment requirements.
 5. Correct, amend, cancel, or replace information without losing history.
 
 Detailed requirements and conformance language will be developed through linked
-issues and recorded decisions.
+issues and recorded decisions using the proposed drafting conventions.

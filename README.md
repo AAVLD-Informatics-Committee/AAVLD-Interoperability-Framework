@@ -39,6 +39,20 @@ mapping, and documented veterinary gaps.
 - `meetings/` - public-safe agendas, working questions, and outcomes.
 - `references/` - source classification and provenance.
 
+## Drafting and conformance
+
+The proposed [drafting conventions](framework/drafting-conventions.md) define
+statement classes, verbal forms, traceability, verification methods, AAVLD
+working-stage gates, and the boundary between technology-neutral framework
+requirements and FHIR implementation-profile constraints. The
+[source classification policy](references/source-classification.md) records a
+source's role, authority domain, adoption status, version, and permitted use.
+
+Both policies are provisional pending
+[#10](https://github.com/AAVLD-Informatics-Committee/AAVLD-Interoperability-Framework/issues/10).
+Using an external reference to inform drafting does not adopt the external
+organization's process or make that source an AAVLD requirement.
+
 ## Governance and participation
 
 Issues record work and decision requests. Pull requests contain proposed

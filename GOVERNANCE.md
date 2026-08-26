@@ -16,6 +16,8 @@ An approval or merge at one layer does not imply approval at another layer.
 
 - Issues record work, questions, evidence, and decision requests.
 - The decision log summarizes accepted or tentative dispositions.
+- The source register and classification policy record provenance, authority,
+  adoption status, and permitted use.
 - Pull requests record proposed repository changes.
 - Merged content is the integrated working source.
 - Tagged releases identify stable review or approved artifacts.
@@ -26,12 +28,33 @@ An approval or merge at one layer does not imply approval at another layer.
 
 1. Open or identify the governing issue.
 2. Gather source evidence, use cases, and implementation impact.
-3. Record required committee or AAVLD disposition.
-4. Propose text or computable changes through a pull request.
-5. Review mapping, terminology, compatibility, validation, and data-safety
-   effects.
-6. Merge only within the authority granted to repository maintainers.
-7. Update the decision log and changelog when applicable.
+3. Classify proposed statements and identify their conformance subjects,
+   traceability, and verification approach.
+4. Record required committee or AAVLD disposition.
+5. Propose text or computable changes through a pull request.
+6. Review drafting, authority, mapping, terminology, compatibility, validation,
+   licensing, and data-safety effects.
+7. Merge only within the authority granted to repository maintainers.
+8. Update the decision log and changelog when applicable.
+
+## Drafting and conformance authority
+
+The proposed [drafting conventions](framework/drafting-conventions.md) and
+[source classification policy](references/source-classification.md) apply to
+working material pending committee disposition of
+[#10](https://github.com/AAVLD-Informatics-Committee/AAVLD-Interoperability-Framework/issues/10).
+
+- Repository maintainers may integrate clearly marked provisional material.
+- The committee resolves framework statement classes, normative language,
+  semantic requirements, and implementation-profile scope.
+- Formal AAVLD publication authority approves an official framework release or
+  implementation mandate.
+- An external source controls only its stated authority domain. Referencing ISO,
+  IETF, OASIS, or HL7 material does not transfer their governance or approval to
+  AAVLD.
+- A computable FHIR constraint must trace to framework text or a recorded
+  implementation-profile decision, identify its FHIR version, and state its
+  verification evidence.
 
 ## Working states
 
@@ -43,7 +66,9 @@ An approval or merge at one layer does not imply approval at another layer.
 6. Approved Framework 1.0.
 
 The symposium output does not automatically become Working Draft 0.1. Outcomes
-must be reconciled and approved by the required authority.
+must be reconciled and approved by the required authority. Minimum entry gates
+for each stage are defined in the
+[drafting conventions](framework/drafting-conventions.md).
 
 ## Decisions still required
 
@@ -52,3 +77,7 @@ must be reconciled and approved by the required authority.
 - Confirm licensing and external contribution terms.
 - Define quorum, decision recording, dissent, and reconsideration rules.
 - Decide whether stakeholder or public review is required.
+- Approve or revise the drafting conventions and source-classification policy
+  in #10.
+- Apply the controlling disposition from AAVLD-IT-Guidance #18 to any
+  ISO/IEC 17025 relationship stated by this framework.

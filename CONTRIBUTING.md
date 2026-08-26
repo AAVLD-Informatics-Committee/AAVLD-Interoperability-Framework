@@ -14,10 +14,27 @@ by itself confer decision or publication authority.
 - Use a work-item issue for a bounded deliverable and a decision-request issue
   when committee direction is needed.
 - Link substantive pull requests to an issue.
+- Classify each substantive statement and identify its conformance subject,
+  source IDs, governing decision, and verification approach.
 - Identify affected framework, model, FHIR, terminology, example, and
   compatibility concerns.
 - Keep editorial review, repository merge approval, committee disposition, and
   formal AAVLD approval distinct.
+
+## Drafting and conformance checklist
+
+- Apply the proposed
+  [drafting conventions](framework/drafting-conventions.md), including one
+  principal requirement per statement and consistent `shall`, `should`, `may`,
+  and `can` usage.
+- Keep framework requirements technology-neutral unless a recorded decision
+  defines an implementation-profile constraint.
+- State FHIR and dependency versions for computable artifacts.
+- Define the actor behavior represented by FHIR `mustSupport`; the flag alone is
+  not a complete conformance statement.
+- Mark examples, notes, rationales, and unresolved issues as informative.
+- Use `EXAMPLE-...` identifiers for pre-symposium illustrations; stable
+  `AAVLD-IF-...` identifiers begin with Working Draft 0.1.
 
 ## Data and source rules
 
@@ -28,5 +45,6 @@ by itself confer decision or publication authority.
 - Identify the source and applicable license for contributed material.
 - Do not imply endorsement by AAVLD, HL7, a laboratory, or a vendor.
 
-See [DATA-SAFETY.md](DATA-SAFETY.md) and the
-[source register](references/source-register.md).
+See [DATA-SAFETY.md](DATA-SAFETY.md), the
+[source register](references/source-register.md), and the
+[source classification policy](references/source-classification.md).
