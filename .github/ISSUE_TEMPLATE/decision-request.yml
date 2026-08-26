@@ -1,0 +1,49 @@
+name: Decision request
+description: Request a recorded substantive committee or AAVLD disposition.
+title: "Decision: "
+labels:
+  - "type:decision"
+  - "needs committee input"
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Decision requested
+      description: State one decision question.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and evidence
+      description: Identify use cases, sources, options, and constraints.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options and proposed resolution
+      description: Describe viable options and the recommended disposition, if any.
+    validations:
+      required: true
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences and affected artifacts
+      description: Include compatibility, FHIR, terminology, governance, and release effects.
+    validations:
+      required: true
+  - type: textarea
+    id: authority
+    attributes:
+      label: Required authority
+      description: Identify whether repository, committee, or formal AAVLD approval is needed.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: "- [ ] Decision and rationale recorded\n- [ ] Affected artifacts updated"
+    validations:
+      required: true

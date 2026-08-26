@@ -1,0 +1,35 @@
+name: Work item
+description: Propose a bounded framework, model, example, meeting, or release deliverable.
+title: ""
+labels:
+  - "type:work"
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: State the concrete outcome this issue should produce.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and evidence
+      description: Identify use cases, sources, prior decisions, and affected participants.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List observable conditions for completion.
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
+  - type: textarea
+    id: impacts
+    attributes:
+      label: Mapping, terminology, compatibility, and data-safety impacts
+      description: Record applicable impacts or state why they do not apply.
+    validations:
+      required: true
